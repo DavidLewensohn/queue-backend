@@ -1,0 +1,338 @@
+[
+    {
+        "firstName": "Moshe",
+        "lastName": "Rabenu",
+        "email": "Moshe@gmail.com",
+        "meetings": [ 
+            {
+                "userFirstName": "Deddy",
+                "userLastName": "golly",
+                "date": "2023-01-25T10:30:00.000Z",
+                "description": "description of the appointment", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Mimo",
+                "userLastName": "Doha",
+                "date": "2023-01-27T11:30:00.000Z",
+                "description": "description of the appointment with Mimo", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899" 
+            },
+            {
+                "userFirstName": "Gery",
+                "userLastName": "Hook",
+                "date": "2023-01-25T12:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899" 
+            },
+            {
+                "userFirstName": "Angella",
+                "userLastName": "Mimosa",
+                "date": "2023-01-26T10:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            }
+        ]
+
+    },
+    {
+        "firstName": "Jesos",
+        "lastName": "The-son",
+        "email": "Jesos@gmail.com",
+        "meetings": [ 
+            {
+                "userFirstName": "Peddy",
+                "userLastName": "folly",
+                "date": "2023-01-27T10:30:00.000Z",
+                "description": "description of the appointment", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Dimo",
+                "userLastName": "Moha",
+                "date": "2023-01-27T11:30:00.000Z",
+                "description": "description of the appointment with Dimo", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Mery",
+                "userLastName": "Pook",
+                "date": "2023-01-25T12:30:00.000Z",
+                "description": "description of the appointment with Mery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Mangella",
+                "userLastName": "Somosa",
+                "date": "2023-01-26T10:30:00.000Z",
+                "description": "description of the appointment with Mangella", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            }
+        ]
+
+    },
+    {
+        "firstName": "Boddha",
+        "lastName": "Meditation",
+        "email": "Boddha@gmail.com",
+        "meetings": [ 
+            {
+                "userFirstName": "Neddy",
+                "userLastName": "Lolly",
+                "date": "2023-01-25T10:30:00.000Z",
+                "description": "description of the appointment", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Fimo",
+                "userLastName": "Foha",
+                "date": "2023-01-27T11:30:00.000Z",
+                "description": "description of the appointment with Fimo", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Lery",
+                "userLastName": "Vook",
+                "date": "2023-01-25T12:30:00.000Z",
+                "description": "description of the appointment with Lery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Ella",
+                "userLastName": "mosa",
+                "date": "2023-01-26T10:30:00.000Z",
+                "description": "description of the appointment with Ella", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            }
+        ]
+
+    },
+    {
+        "firstName": "Moohammad",
+        "lastName": "Navy",
+        "email": "Moohammad@gmail.com",
+        "meetings": [ 
+            {
+                "userFirstName": "Meddy",
+                "userLastName": "Oolly",
+                "date": "2023-01-25T10:30:00.000Z",
+                "description": "description of the appointment", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Mimo",
+                "userLastName": "Doha",
+                "date": "2023-01-27T11:30:00.000Z",
+                "description": "description of the appointment with Mimo", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Gery",
+                "userLastName": "Hook",
+                "date": "2023-01-25T12:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Angella",
+                "userLastName": "Mimosa",
+                "date": "2023-01-26T10:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            }
+        ]
+
+    },
+    {
+        "firstName": "Baba",
+        "lastName": "Sali",
+        "email": "Baba@gmail.com",
+        "meetings": [ 
+            {
+                "userFirstName": "Deddy",
+                "userLastName": "golly",
+                "date": "2023-01-25T10:30:00.000Z",
+                "description": "description of the appointment", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Mimo",
+                "userLastName": "Doha",
+                "date": "2023-01-27T11:30:00.000Z",
+                "description": "description of the appointment with Mimo", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Gery",
+                "userLastName": "Hook",
+                "date": "2023-01-25T12:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Angella",
+                "userLastName": "Mimosa",
+                "date": "2023-01-26T10:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            }
+        ]
+
+    },
+    {
+        "firstName": "David",
+        "lastName": "lewensohn",
+        "email": "davidlewensohn@gmail.com",
+        "meetings": [ 
+            {
+                "userFirstName": "Deddy",
+                "userLastName": "golly",
+                "date": "2023-01-25T10:30:00.000Z",
+                "description": "description of the appointment", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Mimo",
+                "userLastName": "Doha",
+                "date": "2023-01-27T11:30:00.000Z",
+                "description": "description of the appointment with Mimo", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Gery",
+                "userLastName": "Hook",
+                "date": "2023-01-25T12:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Angella",
+                "userLastName": "Mimosa",
+                "date": "2023-01-26T10:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            }
+        ]
+
+    },
+    {
+        "firstName": "Duvid",
+        "lastName": "lewen",
+        "email": "duvid777@gmail.com",
+        "meetings": [ 
+            {
+                "userFirstName": "Deddy",
+                "userLastName": "golly",
+                "date": "2023-01-25T10:30:00.000Z",
+                "description": "description of the appointment", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Mimo",
+                "userLastName": "Doha",
+                "date": "2023-01-27T11:30:00.000Z",
+                "description": "description of the appointment with Mimo", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Gery",
+                "userLastName": "Hook",
+                "date": "2023-01-25T12:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            },
+            {
+                "userFirstName": "Angella",
+                "userLastName": "Mimosa",
+                "date": "2023-01-26T10:30:00.000Z",
+                "description": "description of the appointment with Gery", 
+                "length": 30,
+                "address": "address of the appointment 132",
+                "virtualMeeting": false,
+                "phonNumber": "0525558899"
+            }
+        ]
+
+    }
+]
