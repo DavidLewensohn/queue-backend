@@ -7,6 +7,7 @@ module.exports = {
     addHost,
     updateHost,
     getUserByGToken,
+    updateQueuerMeeting,
 }
 
 async function getHosts(req, res) {
@@ -28,7 +29,7 @@ async function getUserByGToken(req, res) {
         userData = await userService.getUserInfo(gToken)
         user = await queueService.findUserByEmail(userData.email)
         console.log("getUserByGToken user: ", user);
-        !user? res.send('NEW_USER') :res.send(user)
+        !user ? res.send('NEW_USER') : res.send(user)
 
 
 
@@ -69,6 +70,29 @@ async function updateHost(req, res) {
         console.log('host:', host);
         const updatedHost = await queueService.update(host)
         res.json(updatedHost)
+    } catch (err) {
+        res.status(500).send({ err: "Failed to update host" })
+    }
+}
+async function updateQueuerMeeting(req, res) {
+    try {
+        const meeting = req.body
+        console.log('meeting.queuerEmail:', meeting.queuerEmail)
+        queuer = await queueService.findUserByEmail(meeting.queuerEmail)
+        console.log('queuer:', queuer)
+        queuer.queuedMeetings.forEach(async (e) => {
+            console.log('e.meetingID, meeting.meetingID', e.meetingID, meeting.meetingID);
+            if (e.meetingID == meeting.meetingID){ 
+
+                e.date = meeting.date
+                e.description = meeting.description
+                e.length = meeting.length
+                e.address = meeting.address
+                const updatedQueuer = await queueService.update(queuer)
+                res.json(updatedQueuer)
+            }
+        })
+
     } catch (err) {
         res.status(500).send({ err: "Failed to update host" })
     }
