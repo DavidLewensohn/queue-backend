@@ -12,58 +12,58 @@ module.exports = {
 async function query() {
     console.log('queue-service.query')
     try {
-        const collection = await dbService.getCollection('hosts')
-        const hosts = await collection.find().toArray()
-        console.log('hosts:', hosts)
-        return hosts
+        const collection = await dbService.getCollection('users')
+        const users = await collection.find().toArray()
+        console.log('users:', users)
+        return users
     } catch (err) {
         console.log(">>error in queue-service.query")
         // console.log(err)
-        // logger.error('cannot find hosts', err)
+        // logger.error('cannot find users', err)
         throw err
     }
 }
-async function getById(hostId) {
+async function getById(userId) {
     console.log('queue-service.getById')
     try {
-        const collection = await dbService.getCollection('hosts')
-        const host = await collection.findOne({ _id: ObjectId(hostId) })
-        console.log('host:', host)
-        return host
+        const collection = await dbService.getCollection('users')
+        const user = await collection.findOne({ _id: ObjectId(userId) })
+        console.log('user:', user)
+        return user
     } catch (err) {
         console.log(">>error in queue-service.getById")
         console.log(err)
-        // logger.error('cannot find host', err)
+        // logger.error('cannot find user', err)
         throw err
     }
 }
 
-async function create(host) {
+async function create(user) {
     try {
-        const collection = await dbService.getCollection('hosts')
-        const newHost = await collection.insertOne(host)
-        return host
+        const collection = await dbService.getCollection('users')
+        const newHost = await collection.insertOne(user)
+        return user
     } catch (err) {
         console.log(err)
         throw err
     }
 }
-async function update(host) {
+async function update(user) {
     try {
-        const id = ObjectId(host._id)
-        delete host._id
-        const collection = await dbService.getCollection('hosts')
-        await collection.updateOne({ _id: id }, { $set: { ...host } })
-        host._id = id
-        console.log('updated host:', host)
-        return host
+        const id = ObjectId(user._id)
+        delete user._id
+        const collection = await dbService.getCollection('users')
+        await collection.updateOne({ _id: id }, { $set: { ...user } })
+        user._id = id
+        console.log('updated user:', user)
+        return user
     } catch (err) {
         console.log(err)
         throw err
     }
 }
 async function findUserByEmail(email) {
-    const collection = await dbService.getCollection('hosts')
+    const collection = await dbService.getCollection('users')
     const user = await collection.findOne({ email });
     return user;
   }
