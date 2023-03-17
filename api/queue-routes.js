@@ -1,12 +1,12 @@
 const express = require('express')
 const router = express.Router()
-const {getHosts, getHostById, addHost, updateHost,getUserByGToken,updateQueuerMeeting} = require('./queue-controller.js')
+const { getUsers, getUserById, addUser, updateUser, getUserByGToken, updateQueuerMeeting } = require('./user-controller.js')
 
-router.get('/', getHosts)
-router.get('/:id', getHostById)
+router.get('/', getUsers)
+router.get('/:id', getUserById)
 router.get('/user/:gToken', getUserByGToken)
-router.put('/', updateHost)
+router.put('/', updateUser)
 router.put('/meeting', updateQueuerMeeting)
-router.post('/', addHost) 
+router.post('/', addUser)
 
 module.exports = router

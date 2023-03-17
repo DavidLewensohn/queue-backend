@@ -1,5 +1,5 @@
-const dbService = require('../services/db-service')
-const ObjectId = require('mongodb').ObjectId
+const { ObjectId } = require('mongodb');
+const { getCollection } = require('../services/db-service');
 
 module.exports = {
     query,
@@ -12,7 +12,7 @@ module.exports = {
 async function query() {
     console.log('queue-service.query')
     try {
-        const collection = await dbService.getCollection('users')
+        const collection = await getCollection('users')
         const users = await collection.find().toArray()
         console.log('users:', users)
         return users
@@ -26,7 +26,7 @@ async function query() {
 async function getById(userId) {
     console.log('queue-service.getById')
     try {
-        const collection = await dbService.getCollection('users')
+        const collection = await getCollection('users')
         const user = await collection.findOne({ _id: ObjectId(userId) })
         console.log('user:', user)
         return user
@@ -40,7 +40,7 @@ async function getById(userId) {
 
 async function create(user) {
     try {
-        const collection = await dbService.getCollection('users')
+        const collection = await getCollection('users')
         const newHost = await collection.insertOne(user)
         return user
     } catch (err) {
@@ -52,7 +52,7 @@ async function update(user) {
     try {
         const id = ObjectId(user._id)
         delete user._id
-        const collection = await dbService.getCollection('users')
+        const collection = await getCollection('users')
         await collection.updateOne({ _id: id }, { $set: { ...user } })
         user._id = id
         console.log('updated user:', user)
@@ -63,7 +63,7 @@ async function update(user) {
     }
 }
 async function findUserByEmail(email) {
-    const collection = await dbService.getCollection('users')
+    const collection = await getCollection('users')
     const user = await collection.findOne({ email });
     return user;
   }

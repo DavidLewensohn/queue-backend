@@ -1,73 +1,85 @@
 [
     {
         "firstName": "David",
-        "lastName": "lewensohn",
+        "lastName": "Lewensohn",
+        "phone": "555-555-5555",
         "email": "davidlewensohn@gmail.com",
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "",
+            "country": "IL"
+        },
+        "profilePicture": "https://example.com/profile-picture.jpg",
+        "bio": "I'm a software engineer with a passion for building great products.",
         "hostedMeetings": [
             {
-                "queuerFirstName": "Deddy",
-                "queuerLastName": "golly",
-                "queuerEmail": "golly@gmail.com",
-                "date": "2023-01-25T10:30:00.000Z",
-                "description": "description of the appointment",
-                "length": 30,
-                "address": "address of the appointment 132",
-                "virtualMeeting": false,
-                "phonNumber": "0525558899"
-            },
-            {
-                "queuerFirstName": "Mimo",
-                "queuerLastName": "Doha",
-                "queuerEmail": "golly@gmail.com",
-                "date": "2023-01-27T11:30:00.000Z",
-                "description": "description of the appointment with Mimo",
-                "length": 30,
-                "address": "address of the appointment 132",
-                "virtualMeeting": false,
-                "phonNumber": "0525558899"
-            },
-            {
-                "queuerFirstName": "Gery",
-                "queuerLastName": "Hook",
-                "queuerEmail": "golly@gmail.com",
-                "date": "2023-01-25T12:30:00.000Z",
-                "description": "description of the appointment with Gery",
-                "length": 30,
-                "address": "address of the appointment 132",
-                "virtualMeeting": false,
-                "phonNumber": "0525558899"
-            },
-            {
-                "queuerFirstName": "Duvid",
-                "queuerLastName": "lewen",
-                "queuerEmail": "duvid777@gmail.com",
-                "date": "2023-02-26T10:30:00.000Z",
-                "description": "description of the appointment with Gery",
-                "length": 30,
-                "address": "address of the appointment 132",
-                "virtualMeeting": false,
-                "phonNumber": "0525558899"
+                "host": {
+                    "firstName": "David",
+                    "lastName": "Lewensohn",
+                    "email": "davidlewensohn@gmail.com",
+                    "phone": "555-555-5555"
+                },
+                "queuer": {
+                    "firstName": "Duvid",
+                    "lastName": "Lew",
+                    "email": "duvid777@gmail.com",
+                    "phone": "555-555-5555"
+                },
+                "startTime": "2022-03-01T09:00:00Z",
+                "endTime": "2022-03-01T10:00:00Z",
+                "description": "Discuss project status and next steps.",
+                "address": {
+                    "street": "456 Oak St",
+                    "city": "Anytown",
+                    "state": "CA",
+                    "country": "USA"
+                },
+                "meetingID": "1234",
+                "status": "upcoming"
             }
         ],
         "queuedMeetings": []
     },
     {
         "firstName": "Duvid",
-        "lastName": "lewen",
+        "lastName": "Lew",
+        "phone": "555-555-5555",
         "email": "duvid777@gmail.com",
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "",
+            "country": "IL"
+        },
+        "profilePicture": "https://example.com/profile-picture.jpg",
+        "bio": "I'm a software engineer with a passion for building great products.",
         "hostedMeetings": [],
         "queuedMeetings": [
             {
-                "hostFirstName": "David",
-                "hostLastName": "lewensohn",
-                "hostEmail": "davidlewensohn@gmail.com",
-                "date": "2023-02-26T10:30:00.000Z",
-                "description": "description of the appointment with Gery",
-                "length": 30,
-                "address": "address of the appointment 132",
-                "virtualMeeting": false,
-                "hostPhonNumber": "0525558899"
-            }
-        ]
+                "host": {
+                    "firstName": "David",
+                    "lastName": "Lewensohn",
+                    "email": "davidlewensohn@gmail.com",
+                    "phone": "555-555-5555"
+                },
+                "queuer": {
+                    "firstName": "Duvid",
+                    "lastName": "Lew",
+                    "email": "duvid777@gmail.com",
+                    "phone": "555-555-5555"
+                },
+                "startTime": "2022-03-01T09:00:00Z",
+                "endTime": "2022-03-01T10:00:00Z",
+                "description": "Discuss project status and next steps.",
+                "address": {
+                    "street": "456 Oak St",
+                    "city": "Anytown",
+                    "state": "CA",
+                    "country": "USA"
+                },
+                "meetingID": "1234",
+                "status": "upcoming"
+            }]
     }
 ]
